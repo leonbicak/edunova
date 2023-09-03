@@ -1,0 +1,68 @@
+int redaka, stupaca;
+
+Console.Write("Unesi broj redova: ");
+redaka = int.Parse(Console.ReadLine());
+
+Console.Write("Unesi broj stupaca: ");
+stupaca = int.Parse(Console.ReadLine());
+
+int[,] matrica = new int[redaka, stupaca];
+
+int b = 1;
+int k = 0;//korektor
+string s;
+
+
+
+
+while (b <= redaka * stupaca)
+{
+    for (int i = 1 + k; i <= stupaca - k; i++)
+    {
+        if (b <= redaka * stupaca)
+            matrica[redaka - 1 - k, stupaca - i] = b++;
+    }
+
+   
+
+
+
+
+    for (int i = redaka -k-2; i >=0 + k; i--)
+    {
+        if (b <= redaka * stupaca)
+            matrica[i,0 + k] = b++;
+    }
+
+ 
+
+
+    for (int i = stupaca - 1 - (stupaca - 2 - k); i <= stupaca - 1 - k; i++)
+    {
+        if (b <= redaka * stupaca)
+            matrica[0 + k, i] = b++;
+    }
+
+
+
+
+
+    for (int i = redaka - 1  - (redaka - 2 - k); i <= redaka - 2 - k; i++)
+    {
+
+        if (b <= redaka * stupaca)
+            matrica[i, stupaca - 1 - k] = b++;
+    }
+
+    k++;
+}
+
+for (int i = 0; i < redaka; i++)
+{
+    for (int j = 0; j < stupaca; j++)
+    {
+        s = "   " + matrica[i, j];
+        Console.Write(s[^3..]);
+    }
+    Console.WriteLine();
+}
