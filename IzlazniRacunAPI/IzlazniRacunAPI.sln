@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33530.505
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IzlazniRacunAPI", "IzlazniRacunAPI\IzlazniRacunAPI.csproj", "{354949CB-99DD-42AC-9BCB-C96E49B12804}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{354949CB-99DD-42AC-9BCB-C96E49B12804}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{354949CB-99DD-42AC-9BCB-C96E49B12804}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{354949CB-99DD-42AC-9BCB-C96E49B12804}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{354949CB-99DD-42AC-9BCB-C96E49B12804}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BDA49677-F8A6-457E-BF5F-B2F77DC3B087}
+	EndGlobalSection
+EndGlobal
