@@ -39,19 +39,19 @@ VALUES
 select * from kupac2;
 
 
-INSERT INTO ugovor(datum_pocetka,datum_zavrsetka,urudzbeni_broj)
+INSERT INTO ugovor(ID_kupac2,datum_pocetka,datum_zavrsetka,urudzbeni_broj)
 VALUES
-(2022-04-17,2023-04-16,'17/22'),
-(2022-07-12,2023-07-11,'22/22'),
-(2022-05-22,2023-05-21,'20/22');
+(1,'2022-04-17','2023-04-16','17/22'),
+(2,'2022-07-12','2023-07-11','22/22'),
+(3,'2022-05-22','2023-05-21','20/22');
 
 select * from ugovor;
 
 INSERT INTO izlazni_racun (ID_ugovor, datum_usluge,datum_dospjeca,cijena,broj_racuna)
 VALUES
-(1,2022-08-31,2022-09-15,200,13),
-(2,2022-07-31,2022-08-15,400,11),
-(3,2022-10-31,2022-11-15,500,17);
+(1,'2022-08-31','2022-09-15',200,13),
+(2,'2022-07-31','2022-08-15',400,11),
+(3,'2022-10-31','2022-11-15',500,17);
 
 drop table izlazni_racun;
 select * from izlazni_racun;
